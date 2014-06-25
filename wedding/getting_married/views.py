@@ -27,3 +27,23 @@ def contact(request):
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
 
+def wedding_event(request):
+    template = loader.get_template("wedding_event.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
+def travel(request):
+    template = loader.get_template("travel.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
+def accommodations(request):
+    template = loader.get_template("accommodations.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
+def registy(request):
+    template = loader.get_template("registy.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
