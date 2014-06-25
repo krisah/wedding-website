@@ -12,7 +12,7 @@
         <!-- Bootstrap -->
         {% load staticfiles %}
         <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/bootstrap.min.css' %}" />
-        <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/home.css' %}"/>
+        <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/wedding_event.css' %}"/>
         <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/starter-template.css' %}" />
 
         
@@ -38,7 +38,7 @@
                 </div>      
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}">Home</a></li>
                         <li><a href="{% url 'about_us' %}">About Us</a></li>
                         <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
@@ -60,7 +60,7 @@
                      <div class="col-sm-3 col-md-2 sidebar">
                           <ul class="nav nav-sidebar">
                               <li><a href="{% url 'wedding_event' %}">Wedding Event</a></li>
-                              <li><a href="{% url 'travel' %}">Travel</a></li>
+                              <li class="active"><a href="{% url 'travel' %}">Travel</a></li>
                               <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
                               <li><a href="{% url 'registy' %}">Registy</a></li>
                               <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
