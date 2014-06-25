@@ -14,3 +14,16 @@ def cover(request):
     template = loader.get_template("cover.html")
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
+
+
+def about_us(request):
+    template = loader.get_template("about_us.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
+
+def contact(request):
+    template = loader.get_template("contact.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
