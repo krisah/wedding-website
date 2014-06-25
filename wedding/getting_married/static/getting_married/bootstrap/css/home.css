@@ -37,7 +37,7 @@ display: block;
 padding: 20px;
 overflow-x: hidden;
 overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-background-color: #f5f5f5;
+background-color: #FFFF99;
 border-right: 1px solid #eee;
 }
 }
@@ -49,13 +49,10 @@ margin-bottom: 20px;
 margin-left: -20px;
 }
 .nav-sidebar > li > a {
-padding-right: 20px;
-padding-left: 20px;
+padding-right: 10px;
+padding-left: 90px;
+color: #A0A0A0;
 }
-/*.nav-sidebar > .active > a {
-color: #fff;
-background-color: #428bca;
-}*/
 
 
 /*

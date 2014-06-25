@@ -13,5 +13,7 @@ urlpatterns = patterns('',
     url(r'^travel', views.travel, name='travel'),
     url(r'^accommodations', views.accommodations, name='accommodations'),
     url(r'registy', views.registy, name='registy'),
+    url(r'photo_album', views.photo_album, name='photo_album'),
+    url(r'guest_book', views.guest_book, name='guest_book'),
 )        
 

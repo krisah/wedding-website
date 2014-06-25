@@ -47,3 +47,13 @@ def registy(request):
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
 
+def photo_album(request):
+    template = loader.get_template("photo_album.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
+def guest_book(request):
+    template = loader.get_template("guest_book.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
+
