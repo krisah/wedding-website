@@ -93,10 +93,22 @@ border-radius: 50%;
 }
 
 
-/*h1 {
-color: #FFFF00;
+.second {
+padding-left: 110px;
+font-size: 20px;
 }
-.lead {
-color: #FFFF00;
-background-color: #A9A9A9;
-}*/
+
+
+img {
+padding-top: 0px;
+padding-right: 100px;
+}
+.media-body {
+padding-top: 100px;
+padding-left: 500px;
+font-size: 20px;
+}
+.media-heading {
+font-size: 40px;
+}
+
