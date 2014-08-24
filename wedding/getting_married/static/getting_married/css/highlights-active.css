@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#wrapper #header #nav ul li .active {
+	background-color: #333;
+	color: #FF9;
+	height: 50px;
+	width: 90px;
+}
+#side-navbar-wrapper #sidebar ul li .active {
+	color: #FF3;
+	background-color: #666;
+}

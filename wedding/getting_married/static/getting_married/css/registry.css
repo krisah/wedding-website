@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.media-body {
+	margin-left: 200px;
+	margin-top: 100px;
+	text-decoration: none;
+
+}
+h1 {
+	margin-left: 300px;
+
+}
+#wrapper .media-body ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#wrapper .media-body ul li a {
+	color: #000;
+	text-decoration: none;
+}

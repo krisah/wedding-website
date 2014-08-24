@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.media-body {
+	margin-left: 200px;
+}
+.media-body h1 {
+	margin-top: 100px;
+	margin-left: 300px;
+}#wrapper .media-body ul {
+	list-style-type: none;
+}
+#wrapper .media-body ul li {
+	margin-top: 20px;
+}
+#wrapper .media-body ul li a {
+	color: #000;
+	text-decoration: none;
+}

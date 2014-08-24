@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+@import url("../webfonts/LetsGo/stylesheet.css");
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	height: 50px;
+	width: 100%;
+	list-style-type: none;
+}
+#header {
+	height: 50px;
+	width: 100%;
+	position: static;
+}
+#nav {
+	height: 50px;
+	width: 100%;
+	list-style-type: none;
+	background-color: #999;
+	position: fixed;
+}
+#nav ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+#nav ul li a {
+	color: #FF3;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-align: center;
+	list-style-type: none;
+	-webkit-transition: all;
+	-moz-transition: all;
+	-ms-transition: all;
+	-o-transition: all;
+	transition: all;
+	float: right;
+	margin-left: 20px;
+	line-height: 80px;
+	font-family: LetsGo;
+	font-size: 18px;
+}
+#nav ul h3 a {
+	line-height: 70px;
+	color: #FF3;
+	text-decoration: none;
+	text-transform: capitalize;
+	-webkit-transition: all 0ms;
+	-moz-transition: all 0ms;
+	-ms-transition: all 0ms;
+	-o-transition: all 0ms;
+	transition: all 0ms;
+	font-family: LetsGo;
+	font-size: 24px;
+}
+#nav ul li a:hover {
+	color: #000;
+}
+#nav ul h3 a:hover {
+	color: #000;
+}
+
+
+#side-navbar-wrapper {
+	background-color: #FFF;
+	height: 1000px;
+	width: 100px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	padding: 0px;
+	float: left;
+}
+
+#sidebar {
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	height: 1275px;
+	width: 150px;
+	position: fixed;
+	background-color: #FFF;
+}
+
+
+#sidebar ul {
+	display: block;
+}
+
+#sidebar ul li {
+	float: left;
+	list-style-type: none;
+
+}
+#side-navbar-wrapper #sidebar ul li a {
+	color: #999;
+	text-decoration: none;
+	text-align: center;
+	list-style-type: none;
+	line-height: 50px;
+	float: right;
+	-webkit-transition: all 0s ease 0s;
+	-moz-transition: all 0s ease 0s;
+	-ms-transition: all 0s ease 0s;
+	-o-transition: all 0s ease 0s;
+	transition: all 0s ease 0s;
+	font-family: 'Dancing Script', cursive;
+	height: 50px;
+	width: 150px;
+	padding: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 20px;
+}
+
+#side-navbar-wrapper #sidebar ul li a:hover {
+	background-color: #D2D2D2;
+	color: #FF3;
+}
+
+#wrapper #footer #inner p {
+	color: #666;
+	margin-top: 500px;
+	margin-left: 500px;
+	position: static;
+}

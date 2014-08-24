@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@import url("../webfonts/MiloScript/stylesheet.css");
+
+/* CSS Document */
+
+#wrapper .media-body {
+
+}
+#wrapper .media-body #media {
+	margin-left: 200px;
+	font-family: MiloScript;
+	font-size: 18px;
+
+}
+#wrapper img {
+	height: 500px;
+	width: 800px;
+	margin-left: 250px;
+	margin-top: 25px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#wrapper .media-body h1 {
+	margin-left: 200px;
+	margin-top: 0px;
+}

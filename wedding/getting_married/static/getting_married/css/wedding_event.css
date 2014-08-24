@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+
+.media-body {
+	margin-left: 200px;
+	margin-top: 100px;
+	text-decoration: none;
+
+}
+h1 {
+	margin-left: 300px;
+
+}
+
+
+.media-body img {
+	float: left;
+	margin-top: 30px;
+}
+
+.media-body h4 {
+	margin-top: 40px;
+	font-size: 18px;
+	margin-left: 310px;
+}
+.media-body p {
+	margin-top: 10px;
+	margin-left: 310px;
+}
+
+.media-body #p2 {
+	margin-top: 100px;
+	margin-left: 400px;
+}
+
+#wrapper .ceremony-information {
+	margin-top: 60px;
+	margin-left: 200px;
+}
+.mediabody2 {
+	margin-top: 60px;
+	margin-left: 200px;
+}
+.mediabody2 img {
+	float: left;
+}
+.mediabody2 h4 {
+	margin-left: 310px;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.mediabody2 p {
+	margin-left: 310px;
+	margin-top: 10px;
+}
+.media-body #links-for-media {
+	text-decoration: none;
+	list-style-type: none;
+}
+.media-body #links-for-media ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+.media-body #links-for-media ul li {
+	text-decoration: none;
+	margin-top: 10px;
+	margin-left: 310px;
+}
+.mediabody2 #links-for-media2 ul {
+	list-style-type: none;
+}
+.mediabody2 #links-for-media2 ul li {
+	padding-top: 10px;
+	margin-left: 310px;
+}
+.mediabody2 #links-for-media2 ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+.media-body #links-for-media ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.Reception-Information p {
+	margin-left: 200px;
+	margin-top: 50px;
+}
+#wrapper iframe {
+	margin-left: 100px;
+	margin-top: 30px;
+}

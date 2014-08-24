@@ -1,0 +1,55 @@
+@charset "utf-8";
+.media-body {
+	margin-left: 200px;
+}
+.media-body h1 {
+	margin-top: 100px;
+	margin-left: 300px;
+}
+.mediabody2 {
+	margin-top: 30px;
+	margin-left: 200px;
+}
+.media-body #media {
+
+}
+.mediabody2 h4 {
+	font-size: 18px;
+	margin-left: 310px;
+	padding-top: 10px;
+}
+.mediabody2 #links-for-media2 {
+	margin-left: 310px;
+}
+.mediabody2 #links-for-media2 ul {
+	text-decoration: none;
+	color: #000;
+	list-style-type: none;
+}
+.mediabody2 #links-for-media2 ul li {
+	color: #000;
+	text-decoration: none;
+	margin-top: 10px;
+}
+.mediabody2 #links-for-media2 ul li a {
+	color: #000;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+
+
+.mediabody2 p {
+	margin-left: 310px;
+	margin-top: 10px;
+}
+
+
+
+
+.mediabody2 img {
+	float: left;
+}
+iframe {
+	margin-top: 200px;
+}

@@ -1,82 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="kris hamilton">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Kristopher Hamilton" />
 
-        <title>Kris and Marissa's Wedding</title>
+<title>Kris and Marissa's Wedding</title>
+{% load staticfiles %}
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/index.css' %}"/>
+<link href="{% static 'getting_married/css/wedding_event.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/highlights-active.css' %]"/>
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/body.css' %}" />
 
-        <!-- Bootstrap -->
-        {% load staticfiles %}
-        <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/bootstrap.min.css' %}" />
-        <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/wedding_event.css' %}"/>
-        <link type= "text/css" rel= "stylesheet" href="{% static 'getting_married/bootstrap/css/starter-template.css' %}" />
 
-        
-        <!-- custom style for this template -->
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="{% url 'cover' %}">We are getting married!!!</a>
-                </div>      
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'about_us' %}">About Us</a></li>
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="nav">  
+      <ul>
+          <li><a href="{% url 'home' %}">home</a></li>
+        <li><a href="{% url 'about_us' %}">about_us</a></li>
+        <li><a href="{% url 'contact' %}">contact</a></li>
+        <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
+      </ul>
+    </div> <!-- end nav -->
+  </div> <!-- end header -->
+
+<div id="side-navbar-wrapper">
+  <div id="sidebar">
+    <ul>
+        <li><a class="active" href="{% url 'wedding_event' %}">Wedding Event</a></li>
+      <li><a href="{% url 'travel' %}">Travel</a></li>
+      <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
+      <li><a href="{% url 'registry' %}">Registry</a></li>
+      <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
+      <li><a href="{% url 'guest_book' %}">Guest Book</a></li>
+      <li><a href="{% url 'program' %}">Program</a></li>
+    </ul>
+  </div> <!-- end side-navbar-wrapper -->
+</div> <!-- end side bar -->
+<div class="media-body">
+	<h1>Wedding Event</h1>
+    <img name="Ceremony" src="{% static 'getting_married/assets/unnamed.jpg' %}"  width="300" height="250" />
+        	<h4>Ceremony Information</h4>
+            	<p>May 16, 2015 <br /> 5:30 pm to 6:00 pm <br /><br /> The Isles Resturant and Tiki Bar <br /> 
+                417 West Second Street <br /> Ocean Isle Beach, NC 28469 </p>
+<div id="links-for-media">
+	<ul>
+     <li><a href="https://www.google.com/maps/place/417+W+2nd+St,+Ocean+Isle+Beach,+NC+28469/@33.8795492,-78.4658447,17z/data=!3m1!4b1!4m2!3m1!1s0x89009ca8f6700f4f:0x8aada93d6e8f69ce">Get Directions >></a></li>
+     <li><a href="http://www.islesrestaurant.com/">View Website >></a></li>
+     </ul>
+</div><!-- end links for media -->
+</div><!-- end media body -->
+<div class="ceremony-information">
+	<p id="p2"> Our ceremony will begin at 5:30pm on May 16, 2013, on the beach in front of the resturant. Please arrive a little earlier to find a seat so we can get started on<br /> time. There will be dinner to follow in the semi-private banquet hall at 7pm inside the restaurant.There will be about an hour of down time inbetween, but there<br /> is a tiki bar for everyone to grab drinks, hor d'oeuvres and relax while we get our pictures taken.</p>
+  </div><!--end cermony information -->
+<div class="mediabody2">
+    <img name="Reception" src="{% static 'getting_married/assets/just-a-snap-shot-of-part.jpg' %}"  width="300" height="250" />
+        	<h4>Reception Information</h4>
+                        	<p>May 16, 2015 <br /> 6:00 pm to 11:00 pm <br /><br /> The Isles Resturant and Tiki Bar <br /> 
+                417 West Second Street <br /> Ocean Isle Beach, NC 28469 </p>
+<div id="links-for-media2">
+	<ul>
+     <li><a href="https://www.google.com/maps/place/417+W+2nd+St,+Ocean+Isle+Beach,+NC+28469/@33.8795492,-78.4658447,17z/data=!3m1!4b1!4m2!3m1!1s0x89009ca8f6700f4f:0x8aada93d6e8f69ce">Get Directions >></a></li>
+     <li><a href="http://www.islesrestaurant.com/">View Website >></a></li>
+     </ul>
+</div><!-- end links for media2 -->
+</div><!-- end media body2 -->
+<div class="Reception-Information">
+	<p>
+    ** Cocktail Hour will be held from 6pm-7pm.**<br /><br /> Dinner will be held at 7pm in the semi-private banquet hall inside the Isle Restaurant. The dining room over looks the ocean and opens up to the outside pool.<br />There is also a tiki bar that will be open for the guests.</p>
+    </div><!-- end reception information -->
     
-            
-           <!--  <div class="container">
-            <div class="starter-template">
-                <h1>Bootstrap starter template</h1>
-                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-            </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3312.3922955784324!2d-78.46584469999999!3d33.87954920000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89009ca8f6700f4f%3A0x8aada93d6e8f69ce!2s417+W+2nd+St%2C+Ocean+Isle+Beach%2C+NC+28469!5e0!3m2!1sen!2sus!4v1408746951237" width="600" height="450" frameborder="0" style="border:0"></iframe>
+<div id="footer">
+	<div id="inner">
+    
+    	<p>&copy;August 2014, This site was created and managed by Kristopher Hamilton.</p>
+    </div> <!-- end inner -->
+</div><!-- end footer -->
+</div><!-- end wrapper -->
 
-       </div>--><!-- /.container --> 
+<script src="https://ajax.googleeapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/modernizr-2.6.1.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
 
-            <div class="container-fluid">
-                <div class="row">
-                     <div class="col-sm-3 col-md-2 sidebar">
-                          <ul class="nav nav-sidebar">
-                              <li class="active"><a href="{% url 'wedding_event' %}">Wedding Event</a></li>
-                              <li><a href="{% url 'travel' %}">Travel</a></li>
-                              <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
-                              <li><a href="{% url 'registy' %}">Registy</a></li>
-                              <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
-                              <li><a href="{% url 'guest_book' %}">Gust Book</a></li>
+</body>
 
-                          </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="{% static 'getting_married/bootstrap/js/bootstrap.min.js' %}"></script>
-    </body>
 </html>
+
+
+

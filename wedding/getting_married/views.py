@@ -5,7 +5,7 @@ from django.template import RequestContext, loader
 
 # Create your views here.
 def home(request):
-    template = loader.get_template("index.html")
+    template = loader.get_template("home.html")
     context = RequestContext(request, {})
     return HttpResponse(template.render(context))
 
@@ -42,8 +42,8 @@ def accommodations(request):
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
 
-def registy(request):
-    template = loader.get_template("registy.html")
+def registry(request):
+    template = loader.get_template("registry.html")
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
 
@@ -57,3 +57,7 @@ def guest_book(request):
     context = RequestContext(request,{})
     return HttpResponse(template.render(context))
 
+def program(request):
+    template = loader.get_template("program.html")
+    context = RequestContext(request,{})
+    return HttpResponse(template.render(context))
