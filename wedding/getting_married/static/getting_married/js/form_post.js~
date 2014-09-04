@@ -1,0 +1,19 @@
+$(function() {
+
+    /* $.getJSONP('http://krisandmarissa.com:8000/getting_married/guest_book_post/', function (data){
+         
+         $.each(data, function(key, value) {
+            $("ul#form_post").append("<li>" + value.guest + value.comment +"</li>");
+         
+         
+         });
+         }); 
+
+    function CallUrl(){
+	$.ajax({
+	    "url": 'http://krisandmarissa.com:8000/getting_married/guest_book_post/',
+            "type": "GET",
+	    "dataType": "applaction/json",*/
+         
+         
+});

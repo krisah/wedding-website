@@ -6,15 +6,24 @@
 
 <title>Kris and Marissa's Wedding</title>
 {% load staticfiles %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'getting_married/js/jquery-ui-1.11.1/jquery-ui.js' %}"></script>
+<script type="text/javascript" src="{% static 'getting_married/js/form_dialog.js' %}"></script>
+<script type="text/javascript" src="{% static 'getting_married/js/form.js' %}"></script>
+<script type="text/javascript" src="{% static 'getting_married/js/form_post.js' %}"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+    $(document).ready(function() {
+            formData();
+            });
+</script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/js/jquery-ui-1.11.1/jquery-ui.css' %}"/>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/index.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/highlights-active.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/body.css' %}" />
-
-<script src="https://ajax.googleeapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/modernizr-2.6.1.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/plugins.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/guest_book.css' %}" />
 
 </head>
 
@@ -38,14 +47,35 @@
         <li><a href="{% url 'travel' %}">Travel</a></li>
         <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
         <li><a href="{% url 'registry' %}">Registry</a></li>
-        <li><a href="{% url 'photo_album' %]">Photo Album</a></li>
+        <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
         <li><a class="active" href="{% url 'guest_book' %}">Guest Book</a></li>
         <li><a href="{% url 'program' %}">Program</a></li>
     </ul>
   </div> <!-- end side-navbar-wrapper -->
 </div> <!-- end side bar -->
 
+<h1> Please leave a comment!!! </h1>
 
+
+<form id='comment' method='post' action='http://krisandmarissa.com:8000/getting_married/guest_book_post/'>
+         <p> <br />
+        Name: <input type='text' name='guest'/>
+        </p>
+        <p><br />
+        <textarea name="comment" rows="7" cols="60"></textarea>
+        </p>
+        <p>
+        <input id='creat-user' type='submit' name='submitButton' value='submit' />
+        </p>
+    </form><br/>
+        
+        <div id='submit'>
+       
+    <p>Thank you for posting in our guest book!!!!!</p>
+        </div>
+        <hr />
+<div id='form_post'>
+</div>
        
 <div id="footer">
 	<div id="inner">
