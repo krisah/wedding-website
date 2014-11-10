@@ -13,10 +13,9 @@
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/highlights-active.css' %}"/>
 <link href="{% static 'getting_married/css/home.css' %}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/body.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/photo_album.css' %}" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/modernizr-2.6.1.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/plugins.js' %}"></script>
 
 </head>
 
@@ -28,7 +27,7 @@
           <li><a href="{% url 'home' %}">home</a></li>
           <li><a href="{% url 'about_us' %}">about_us</a></li>
           <li><a href="{% url 'contact' %}">contact</a></li>
-          <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
+          <h3><a >we are getting married!!!!</a></h3>
       </ul>
     </div> <!-- end nav -->
   </div> <!-- end header -->
@@ -45,12 +44,66 @@
         <li><a href="{% url 'program' %}">Program</a></li>
     </ul>
   </div> <!-- end side-navbar-wrapper -->
-</div> <!-- end side bar -->
+  <div id="gallery">
+  <table  cellpadding=20 cellspacing=60 border=0 align=center width=70%>
+    <tr valign=top align=center>
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb.jpg'%}" width=100 height=150 border=0></a>
 
-<div class="media-body">
-	<h1></h1>
-	<p id="media"></p> 
-</div><!-- end media body -->
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-4.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-4.jpg'%}" width=100 height=150 border=0></a>
+
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-10.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-10.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-16.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-16.jpg'%}" width=100 height=150 border=0></a>
+    </tr>
+
+    <tr valign=top align=center>
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-17.jpg'%}"target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-17.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-19.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-19.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-20.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-20.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-21.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-21.jpg'%}" width=100 height=150 border=0></a>
+    </tr>
+
+    <tr valign=top align=center>
+           <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-30.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-30.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-33.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-33.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-36.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-36.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-43.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-43.jpg'%}" width=100 height=150 border=0></a>
+    </tr>
+
+    <tr valign=top align=center>
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-52.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-52.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-53.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-53.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-72.jpg'%}"target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-72.jpg'%}" width=100 height=150 border=0></a>
+
+            <td><a href="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-75.jpg'%}" target='_new' title='Click to enlarge'>
+        <img src="{% static 'getting_married/assets/ENGLR/SSBENGbbbbb-75.jpg'%}" width=100 height=150 border=0></a>
+    </tr>
+</table>
+</div> <!--end gallery-->
        
 <div id="footer">
 	<div id="inner">

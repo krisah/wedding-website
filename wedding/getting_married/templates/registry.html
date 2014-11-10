@@ -27,7 +27,7 @@
           <li><a href="{% url 'home' %}">home</a></li>
           <li><a href="{% url 'about_us' %}">about_us</a></li>
           <li><a href="{% url 'contact' %}">contact</a></li>
-          <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
+          <h3><a >we are getting married!!!!</a></h3>
       </ul>
     </div> <!-- end nav -->
   </div> <!-- end header -->
@@ -38,9 +38,9 @@
         <li><a href="{% url 'wedding_event' %}">Wedding Event</a></li>
         <li><a href="{% url 'travel' %}">Travel</a></li>
         <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
-        <li><a class="active" href="{% url 'registry' %]">Registry</a></li>
+        <li><a class="active" href="{% url 'registry' %}">Registry</a></li>
         <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
-        <li><a href="{% url 'guest_book' %]">Guest Book</a></li>
+        <li><a href="{% url 'guest_book' %}">Guest Book</a></li>
         <li><a href="{% url 'program' %}">Program</a></li>
     </ul>
   </div> <!-- end side-navbar-wrapper -->
@@ -48,10 +48,14 @@
 
 <div class="media-body">
 	<h1>Registry</h1>
-	<p id="media">Here is what we are going to need after our wedding. Please take a look at all our registries.</p>
+    <p id="media">Here is what we are going to need after our wedding. Please take a look at all our registries.</p><br /> <br />
     	<ul>
         	<li><a href="http://www.target.com/GiftRegistrySearchViewCmd?registryType=WD&jsRequest=true&catalogId=10051&status=completePage&cumulativeTime=-1&listId=XFxrze-tiBy3jAtug0u38Q&noOfPings=&registryFirstName=kristopher&langId=-1&segmentGrpName=-1&storeId=10151&registryLastName=hamilton">Target >></a></li>
-            <li><a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=541466792&eventType=Wedding">Bed Bath & Beyond>></a></li> 
+            <img name="target" src="{% static 'getting_married/assets/target.jpg' %}" width="300" height="250"/><br /><br />
+            
+            <li><a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=541466792&eventType=Wedding">Bed Bath & Beyond>></a></li>
+            <img name="target" src="{% static 'getting_married/assets/bedbathbeyond.jpg' %}" width="300" height="250"/><br /><br />
+
         </ul>
 </div><!-- end media body -->
        

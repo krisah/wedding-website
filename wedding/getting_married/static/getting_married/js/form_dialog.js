@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     $( "#creat-user" ).click( function() {
             $('#submit') .dialog( "open" );
-            
+                    
                  });
 
 });

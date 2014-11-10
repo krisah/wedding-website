@@ -8,6 +8,7 @@ function formData(){
         var div = document.getElementById('form_post');
         for (var i in comments) {
             div.innerHTML = div.innerHTML + comments[i];
-        }
+        };
+        
     });
 }       

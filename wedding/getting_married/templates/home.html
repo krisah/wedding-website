@@ -1,66 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Kristopher Hamilton" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="kris hamilton">
 
-<title>Kris and Marissa's Wedding</title>
+<title>Kris and Marissa Wedding</title>
+
+<!-- Bootstrap -->
 {% load staticfiles %}
-
-
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/index.css' %}"/>
-<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/highlights-active.css' %}"/>
-<link href="{% static 'getting_married/css/home.css' %}" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/body.css' %}" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/modernizr-2.6.1.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/plugins.js' %}"></script>
-
-</head>
-
-<body>
-<div id="wrapper">
-  <div id="header">
-    <div id="nav">  
-      <ul>
-          <li><a class="active" href="{% url 'home' %}">home</a></li>
-          <li><a href="{% url 'about_us' %}">about_us</a></li>
-          <li><a href="{% url 'contact' %}">contact</a></li>
-          <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
-      </ul>
-    </div> <!-- end nav -->
-  </div> <!-- end header -->
-
-<div id="side-navbar-wrapper">
-  <div id="sidebar">
-    <ul>
-        <li><a href="{% url 'wedding_event' %}">Wedding Event</a></li>
-        <li><a href="{% url 'travel' %}">Travel</a></li>
-        <li><a href="{% url 'accommodations' %}">Accommodations</a></li>
-        <li><a href="{% url 'registry' %}">Registry</a></li>
-        <li><a href="{% url 'photo_album' %}">Photo Album</a></li>
-        <li><a href="{% url 'guest_book' %}">Guest Book</a></li>
-        <li><a href="{% url 'program' %}">Program</a></li>
-    </ul>
-  </div> <!-- end side-navbar-wrapper -->
-</div> <!-- end side bar -->
-
-<div class="media-body">
-	<h1></h1>
-	<p id="media"></p> 
-</div><!-- end media body -->
+         <link type= "text/css" rel= "stylesheet" href= "{% static 'getting_married/css/home.css' %}" /> 
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
        
-<div id="footer">
-	<div id="inner">
-    	<p id="home">&copy;August 2014, This site was created and managed by Kristopher Hamilton.</p>
-    </div> <!-- end inner -->
-</div><!-- end footer -->
-</div><!-- end wrapper -->
-</body>
+</head>
+<body>
+        <div class="site-wrapper">
+   <div id="cp_widget_5a08a56c-0aec-496c-92dd-b851e6c496b7">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_5a08a56c-0aec-496c-92dd-b851e6c496b7"; cpo["_fid"] = "A0EAMF8CdBpd";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+ cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+ var c = document.getElementsByTagName("script")[0];
+ c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2014/11/10</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 4242</span><span>camerasoftware</span><span> Picasa</span><span>originaldate</span><span> 8/17/2014 12:14:41 PM</span><span>width</span><span> 2828</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 4242</span><span>camerasoftware</span><span> Picasa</span><span>originaldate</span><span> 8/17/2014 12:25:06 PM</span><span>width</span><span> 2828</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 4242</span><span>camerasoftware</span><span> Picasa</span><span>originaldate</span><span> 8/17/2014 12:38:58 PM</span><span>width</span><span> 2828</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 4242</span><span>camerasoftware</span><span> Picasa</span><span>originaldate</span><span> 8/17/2014 12:56:06 PM</span><span>width</span><span> 2828</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 2828</span><span>camerasoftware</span><span> Picasa</span><span>originaldate</span><span> 8/18/2014 12:32:35 AM</span><span>width</span><span> 4242</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span></noscript>+
+    <div class="site-wrapper">
+<div class="site-wrapper-inner">
+<div class="cover-container">
+<div class="masthead clearfix">
+<div class="inner">
+<h3 class="masthead-brand">Welcome</h3>
+<ul class="nav masthead-nav">
+<li class="active"><a href="{% url 'wedding_event' %}">Home</a></li>
+<!--  <li><a href="#about">About</a></li> -->
+<!--  <li><a href="#contact">Contact</a></li> -->
+</ul>
+</div>
+</div>
 
+<div class="inner cover">
+<h1 class= "cover-heading">Welcome and think you for visiting our site.</h1>
+<p class="lead">Thank you so much for visiting our wedding website! We are so excited to celebrate our special day with our family and friends. Since we are getting married in Ocean Isle, NC, we wanted to come up with this website to keep everyone informed about the wedding. This website contains wedding day details, travel information, and much more - check back for frequent updates.A Special Note for Out-Of-Town Guests: Please take a look at the Travel & Accommodations sections of our website to find useful information about transportation and hotels.</p>
+</div>
+
+<div class="mastfoot">
+<div class="inner">
+<p>This site was created and managed by Kristopher Hamilton.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>    
+
+
+<!-- jQuery
+(necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include
+all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'getting_married/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
 </html>
+
+
 
 
 

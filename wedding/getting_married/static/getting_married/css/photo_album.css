@@ -1,0 +1,11 @@
+#gallery {
+    margin-left: 700px;
+    /*padding-left: 400px;*/
+
+
+}
+td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFF33;
+}

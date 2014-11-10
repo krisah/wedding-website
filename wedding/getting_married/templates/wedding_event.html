@@ -9,6 +9,8 @@
 <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/index.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/countdown.css' %}"/>
+<script type="text/javascript" src="{% static 'getting_married/js/countdown.js' %}"></script>
 <link href="{% static 'getting_married/css/wedding_event.css' %}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/highlights-active.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/body.css' %}" />
@@ -19,7 +21,7 @@
 
 </head>
 
-<body>
+<body onload="countdown(year,month,day,hour,minute)">
 <div id="wrapper">
   <div id="header">
     <div id="nav">  
@@ -27,7 +29,7 @@
           <li><a href="{% url 'home' %}">home</a></li>
         <li><a href="{% url 'about_us' %}">about_us</a></li>
         <li><a href="{% url 'contact' %}">contact</a></li>
-        <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
+        <h3><a >we are getting married!!!!</a></h3>
       </ul>
     </div> <!-- end nav -->
   </div> <!-- end header -->
@@ -45,6 +47,28 @@
     </ul>
   </div> <!-- end side-navbar-wrapper -->
 </div> <!-- end side bar -->
+<table id="table" border="0">
+    <tr>
+        <td align="center" colspan="6"><div class="numbers" id="count2" style="padding: 5px 0 0 0; "></div></td>
+    </tr>
+    <tr id="spacer1">
+        <td align="center" ><div class="numbers" ></div></td>
+        <td align="center" ><div class="numbers" id="dday"></div></td>
+        <td align="center" ><div class="numbers" id="dhour"></div></td>
+        <td align="center" ><div class="numbers" id="dmin"></div></td>
+        <td align="center" ><div class="numbers" id="dsec"></div></td>
+        <td align="center" ><div class="numbers" ></div></td>
+    </tr>
+    <tr id="spacer2">
+        <td align="center" ><div class="title" ></div></td>
+        <td align="center" ><div class="title" id="days">Days</div></td>
+        <td align="center" ><div class="title" id="hours">Hours</div></td>
+        <td align="center" ><div class="title" id="minutes">Minutes</div></td>
+        <td align="center" ><div class="title" id="seconds">Seconds</div></td>
+        <td align="center" ><div class="title" ></div></td>
+    </tr>
+</table>
+
 <div class="media-body">
 	<h1>Wedding Event</h1>
     <img name="Ceremony" src="{% static 'getting_married/assets/unnamed.jpg' %}"  width="300" height="250" />

@@ -8,16 +8,16 @@
 {% load staticfiles %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'getting_married/js/jquery-ui-1.11.1/jquery-ui.js' %}"></script>
-<script type="text/javascript" src="{% static 'getting_married/js/form_dialog.js' %}"></script>
 <script type="text/javascript" src="{% static 'getting_married/js/form.js' %}"></script>
 <script type="text/javascript" src="{% static 'getting_married/js/form_post.js' %}"></script>
+<script type="text/javascript" src="{% static 'getting_married/js/form_dialog.js' %}"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function() {
             formData();
             });
 </script>
-
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/js/jquery-ui-1.11.1/jquery-ui.css' %}"/>
 <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" type="text/css" href="{% static 'getting_married/css/index.css' %}"/>
@@ -35,7 +35,7 @@
           <li><a href="{% url 'home' %}">home</a></li>
           <li><a href="{% url 'about_us' %}">about_us</a></li>
           <li><a href="{% url 'contact' %}">contact</a></li>
-          <h3><a href="{% url 'cover' %}">we are getting married!!!!</a></h3>
+          <h3><a>we are getting married!!!!</a></h3>
       </ul>
     </div> <!-- end nav -->
   </div> <!-- end header -->
@@ -74,6 +74,7 @@
     <p>Thank you for posting in our guest book!!!!!</p>
         </div>
         <hr />
+        <div />
 <div id='form_post'>
 </div>
        

@@ -16,11 +16,11 @@
 #wrapper img {
 	height: 500px;
 	width: 800px;
-	margin-left: 250px;
+/*	margin-left: 250px;
 	margin-top: 25px;
 	padding-top: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
+	padding-right: 0px;*/
+	padding-left: 100px;
 }
 #wrapper .media-body h1 {
 	margin-left: 200px;

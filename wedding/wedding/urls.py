@@ -5,6 +5,6 @@ from getting_married import views
 
 
 urlpatterns = patterns('',
-    url(r'^$',views.cover,name='cover'),
+    url(r'^$',views.home,name='home'),
     url(r'^getting_married/', include('getting_married.urls')),
 )
