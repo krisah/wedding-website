@@ -16,7 +16,7 @@
 <script src="https://ajax.googleeapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'getting_married/js/modernizr-2.6.1.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'getting_married/js/plugins.js' %}"></script>
-<script type="text/php" src="{% static 'getting_married/php/contact.php' %}" ></script>
+<!--<script type="text/php" src="{% static 'getting_married/php/contact.php' %}" ></script>-->
 </head>
 
 <body>
@@ -46,17 +46,15 @@
   </div> <!-- end side-navbar-wrapper -->
 </div> <!-- end side bar -->
 
-<form action=""  method="post">
-    First Name:<br />
-    <input type="text" name="first_name" /> <br />
-    Last Name:<br />
-    <input type="text" name="last_name" /> <br />
+<form id= 'ContactForm' action="{% url 'contact_email' %}"  method="post">
+    First & last Name:<br />
+    <input type="text" name="name" value="" /> <br />
     E-mail:<br />
-    <input type="text" name="email" /> <br />
-    Comment: <br />
-    <textarea type="text" name="comment" rows="7" cols="60" ></textarea><br /><br />
+    <input type="text" name="from_email" value="" /> <br />
+   Message: <br />
+    <textarea type="text" name="message" rows="7" cols="60" ></textarea><br /><br />
     <input type="submit" value="send" />
-    <input type="reset" value="Rest" />
+    <input type="reset" value="Reset" />
 </form>
 
 <div id="footer">
