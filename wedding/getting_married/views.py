@@ -3,7 +3,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 from django.views.decorators.csrf import csrf_exempt
-#from django.conf import settings
 from getting_married.models import *
 import json
 from django.http import HttpResponseRedirect
@@ -38,13 +37,13 @@ def contact_email(request):
     name = request.POST.get('name','')
     message = request.POST.get('message', '')
     from_email = request.POST.get('from_email', '')
-    recipient = ['krisah0118@gmail.com']
+    recipient = ['krisandmarissa5162015@gmail.com']
     if message and from_email and name:
         try:
             send_mail(name, message, from_email, recipient)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
-        return HttpResponseRedirect('thank_you.html')
+        return HttpResponseRedirect('/getting_married/thank_you/')
     else:
         return render_to_response('contact.html', {'form': ContactForm()})
                             
@@ -53,7 +52,7 @@ def contact_email(request):
 
 
 def thankyou(request):
-    return render_to_response('contact.html')
+    return render_to_response('thank_you.html')
 
 def wedding_event(request):
     template = loader.get_template("wedding_event.html")

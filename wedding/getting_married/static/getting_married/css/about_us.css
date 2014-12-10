@@ -11,6 +11,7 @@
 	margin-left: 200px;
 	font-family: MiloScript;
 	font-size: 18px;
+    word-wrap: normal;
 
 }
 #wrapper img {

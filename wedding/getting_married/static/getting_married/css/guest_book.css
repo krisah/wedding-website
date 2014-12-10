@@ -28,4 +28,10 @@ h1 {
     border-width: 5px;
     border-color: #66FF00;
 }
+#wrapper #footer #inner p {
+	color: #666;
+	margin-top: 700px;
+	margin-left: 800px;
+	position: static;
+}
 

@@ -14,8 +14,8 @@ var current="HAMILTON WEDDING!"    //-->enter what you want the script to displa
 var year=2015;    //-->Enter the count down target date YEAR
 var month=05;      //-->Enter the count down target date MONTH
 var day=16;       //-->Enter the count down target date DAY
-var hour=19;      //-->Enter the count down target date HOUR (24 hour clock)
-var minute=00;    //-->Enter the count down target date MINUTE
+var hour=17;      //-->Enter the count down target date HOUR (24 hour clock)
+var minute=30;    //-->Enter the count down target date MINUTE
 var tz=-5;        //-->Offset for your timezone in hours from UTC (see http://wwp.greenwichmeantime.com/index.htm to find the timezone offset for your location)
 
 //    DO NOT CHANGE THE CODE BELOW!

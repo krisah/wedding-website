@@ -1,3 +1,10 @@
 form{
     margin-left:200px;
 }
+#wrapper #footer #inner p {
+	color: #666;
+	margin-top: 700px;
+	margin-left: 800px;
+	position: static;
+}
+

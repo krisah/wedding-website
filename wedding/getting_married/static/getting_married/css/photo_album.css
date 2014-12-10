@@ -1,5 +1,5 @@
 #gallery {
-    margin-left: 700px;
+    margin-left: 250px;
     /*padding-left: 400px;*/
 
 
@@ -8,4 +8,8 @@ td {
     border-style: solid;
     border-width: 1px;
     border-color: #FFFF33;
+}
+#footer{
+    margin-top:4650px;
+    margin-right:10px;
 }

@@ -16,3 +16,11 @@
 	color: #000;
 	text-decoration: none;
 }
+    
+#wrapper #footer #inner p {
+	color: #666;
+	margin-top: 800px;
+	margin-left: 800px;
+	position: static;
+}
+

@@ -1,3 +1,4 @@
+
 """
 Django settings for wedding project.
 
@@ -7,15 +8,11 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-<<<<<<< HEAD
 #EMAIL_USE_TLS = True
 #EMAIL_HOST = 'smtp.gmail.com'
 #EMAIL_HOST_USER = 'krisah0118@gmail.com'
 #EMAIL_HOST_PASSWORD =''
 #EMAIL_PORT = 587
-=======
-
->>>>>>> 68106d241827b264c66a2c0e8690e31317b947dc
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
